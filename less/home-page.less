@@ -56,12 +56,29 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile{
+        width:85%;
+      }
+
+    }
+    @media @mobile{
+      .flexbox(space-evenly, center);
+      flex-direction: column;
     }
 
+
+   
   .btn{
+
     .button(teal, white ,200px, 50px, 10px, center);
     font-size: large;
+
     .flexbox(space-around, center);
+
+    @media @mobile{
+
+      .button(mediumturquoise, white, 350px, 50px, 10px, center);
+    }
    
   }
 
