@@ -268,5 +268,7 @@ h1 {
   border-radius: 10px;
   text-align: center;
   font-size: large;
-  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
