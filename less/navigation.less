@@ -1,5 +1,6 @@
 // Navigation Styles here
 .header{
+    .flexbox(space-evenly,center);
     border-bottom: 2px dashed @navigation-border;
 }
 h1{
@@ -12,13 +13,12 @@ h1{
 .nav{
     width: 100%;
     margin-right:120px;
-    display: flex;
+    .flexbox(space-evenly, center);
     flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+    
 
     a{
-        text-decoration:none;
+    text-decoration:none;
     color:@shark;
     font-size:18px;
   
