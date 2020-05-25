@@ -1,7 +1,26 @@
 // Navigation Styles here
+
+
+.hero{
+    @media @mobile{
+      margin-left:40px;
+        margin-right:40px;
+        display:flex;
+        flex-direction: column;
+    }
+
+    }
+
+
 .header{
     .flexbox(space-evenly,center);
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile{
+        .flexbox(space-evenly, center);
+        flex-flow: column wrap;
+        margin-right:0px;
+    }
 }
 h1{
     font-size: 4rem;
@@ -9,18 +28,53 @@ h1{
     justify-content: flex-start;
     width: 100%;
     margin: 25px 20px 25px 230px;
+
+    @media @mobile{
+       display:flex;
+       justify-content: center;
+       align-items:center;
+    margin:0 auto;
+     
+       
+    }
 }
 .nav{
     width: 100%;
-    margin-right:120px;
     .flexbox(space-evenly, center);
     flex-direction: row;
-    
 
-    a{
+    @media @mobile{
+        flex-direction: row;
+        align-content: bottom;
+    }
+    
+    }
+.nav-items{
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
     text-decoration:none;
     color:@shark;
     font-size:18px;
-  
+
+    @media @mobile{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width:100%;
+
     }
+    a{
+        text-decoration:none;
+        color:@shark;
+        font-size:18px;
+    
+        @media @mobile{
+            .flexbox(space-between, center);
+            flex-direction:row;
+            align-content: center;
+            margin-right:0px;
+    
+        }
+}
 }
